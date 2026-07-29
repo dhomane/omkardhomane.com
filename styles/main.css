@@ -7181,6 +7181,13 @@ Created using IcoMoon - icomoon.io
   font-weight: 700;
 }
 
+.experience-date,
+.cc-experience .text-muted {
+  color: #555 !important;
+  font-size: 0.95rem !important;
+  font-weight: 500;
+}
+
 /* Education Style */
 .cc-education .h5 {
   margin-bottom: 0;
