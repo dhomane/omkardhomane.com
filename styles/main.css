@@ -7289,3 +7289,10 @@ a.credit {
 .section {
   padding-bottom: 0;
 }
+
+.cert-verify-link {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-left: 6px;
+  color: #0771f3;
+}
