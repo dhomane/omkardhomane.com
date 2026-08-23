@@ -7296,3 +7296,91 @@ a.credit {
   margin-left: 6px;
   color: #0771f3;
 }
+
+/* ===================================================================
+   About section + social badges — Stripe-inspired design tokens
+   (colors.ink #0d253d, colors.hairline #e3e8ee, colors.canvas-soft #f6f9fc,
+   rounded.lg 12px, rounded.pill 9999px, elevation Level 1/2)
+   =================================================================== */
+.about-stripe-card {
+  background: #ffffff;
+  border: 1px solid #e3e8ee;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: rgba(0, 55, 112, 0.08) 0 1px 3px;
+}
+
+.about-stripe-card p {
+  color: #0d253d;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.info-pill-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 991px) {
+  .info-pill-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 575px) {
+  .info-pill-grid { grid-template-columns: 1fr; }
+}
+
+.info-pill {
+  background: #f6f9fc;
+  border: 1px solid #e3e8ee;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.info-pill-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #64748d;
+  margin-bottom: 6px;
+}
+
+.info-pill-value {
+  font-size: 15px;
+  color: #0d253d;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+/* Social badges — real brand marks, circular, brand-color backgrounds */
+.social-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 9999px;
+  box-shadow: rgba(0, 55, 112, 0.08) 0 8px 24px, rgba(0, 55, 112, 0.04) 0 2px 6px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  margin: 0 6px;
+}
+
+.social-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 55, 112, 0.12) 0 12px 28px, rgba(0, 55, 112, 0.06) 0 3px 8px;
+}
+
+.social-badge img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-badge--linkedin  { background-color: #0A66C2; }
+.social-badge--facebook  { background-color: #1877F2; }
+.social-badge--github    { background-color: #181717; }
+.social-badge--instagram { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); }
+.social-badge--email     { background-color: #533afd; }
