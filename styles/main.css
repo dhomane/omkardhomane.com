@@ -7374,9 +7374,11 @@ a.credit {
   box-shadow: rgba(0, 55, 112, 0.12) 0 12px 28px, rgba(0, 55, 112, 0.06) 0 3px 8px;
 }
 
-.social-badge img {
-  width: 24px;
-  height: 24px;
+.social-badge svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
 }
 
 .social-badge--linkedin  { background-color: #0A66C2; }
